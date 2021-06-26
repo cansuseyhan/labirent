@@ -7,18 +7,18 @@ x_inp = input()                                 #Get X input
 print("Enter y size of the maze: ")
 y_inp = input()                                 #Get Y input
 
-print("difficulty of maze(Pick: A or B)")
+print("difficulty of maze(Pick: 0 or 1)")
 diff_inp = input()                              #Get Difficulty input 
 
 
 matrix_initial = np.zeros((int(x_inp), int(y_inp)))
 
 
-if diff_inp == "A" :
-    file = open('maze/66A.txt', 'r')
+if diff_inp == "0" :
+    file = open('maze/660.txt', 'r')
     
-if(diff_inp == 'B'):
-    file = open('maze/66B.txt', 'r')    
+if(diff_inp == '1'):
+    file = open('maze/661.txt', 'r')    
     
     
 no_column = 0
