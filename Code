@@ -36,3 +36,4 @@ gameground_initial = np.zeros((int(x_inp), int(y_inp)))
 
 plt.imshow(matrix_initial, cmap='binary')
 plt.show()
+ #This is a maze drawing code.
