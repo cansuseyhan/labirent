@@ -1,0 +1,38 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+print("Enter x size of the maze: ")
+x_inp = input()                                 #Get X input
+print("Enter y size of the maze: ")
+y_inp = input()                                 #Get Y input
+
+print("difficulty of maze(Pick: A or B)")
+diff_inp = input()                              #Get Difficulty input 
+
+
+matrix_initial = np.zeros((int(x_inp), int(y_inp)))
+
+
+if diff_inp == "A" :
+    file = open('maze/66A.txt', 'r')
+    
+if(diff_inp == 'B'):
+    file = open('maze/66B.txt', 'r')    
+    
+    
+no_column = 0
+for line in file:
+    no_row = 0    
+    for word in line.split():               # Reading each cell
+        matrix_initial[no_column, no_row] = int(word)
+        no_row += 1
+    no_column += 1                      
+    
+
+
+gameground_initial = np.zeros((int(x_inp), int(y_inp)))
+
+
+plt.imshow(matrix_initial, cmap='binary')
+plt.show()
