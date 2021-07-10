@@ -15,10 +15,10 @@ matrix_initial = np.zeros((int(x_inp), int(y_inp)))
 
 
 if diff_inp == "0" :
-    file = open('maze/660.txt', 'r')
+    file = open('660.txt', 'r')
     
 if(diff_inp == '1'):
-    file = open('maze/661.txt', 'r')    
+    file = open('661.txt', 'r')    
     
     
 no_column = 0
