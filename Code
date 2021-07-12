@@ -3,12 +3,19 @@ import numpy as np
 
 
 print("Enter x size of the maze: ")
-x_inp = input()                                 #Get X input
+
+#Please enter '6' or '8',then push the enter button
+x_inp = input()                                 
+
 print("Enter y size of the maze: ")
-y_inp = input()                                 #Get Y input
+
+#Please enter same of X,then push the enter button
+y_inp = input()                                 
 
 print("difficulty of maze(Pick: 0 or 1)")
-diff_inp = input()                              #Get Difficulty input 
+
+#Please enter '0' or '1',then push the enter button
+diff_inp = input()                             
 
 
 matrix_initial = np.zeros((int(x_inp), int(y_inp)))
